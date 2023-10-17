@@ -7,7 +7,7 @@ import Homepage from './pages/HomePage';
 
 function App() {
   return (
-    <div className="bg-background-main max-h-screen">
+    <div className="app">
       <Routes>
         <Route
             path="/"

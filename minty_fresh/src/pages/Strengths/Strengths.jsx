@@ -13,10 +13,12 @@ const Strengths = () => {
 
     return (
         <div className='strengths'>
-            <section> THIS WILL BE HEADER COMPONENT IGNOREEE </section>
+            <section> 
+                THIS WILL BE HEADER COMPONENT IGNOREEE
+            </section>
             <div className='strengths__header-container'>
                 <p className="step__text"> Step 2 </p>
-                <h1 className="strengths__title text-center">Let's highlight your strengths & skills</h1>
+                <h1 className="strengths__title">Let's highlight your strengths & skills</h1>
             </div>
             <form method="post" onSubmit={handleSubmit}>
                 <div className="strengths__form">
