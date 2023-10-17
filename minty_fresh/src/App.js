@@ -2,7 +2,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Strengths from './pages/Strengths/Strengths';
 import Homepage from './pages/HomePage';
-
+import './App.scss';
 
 
 function App() {

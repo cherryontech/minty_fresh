@@ -1,4 +1,5 @@
 import './Strengths.scss';
+import Header from '../../components/Header/Header';
 
 const Strengths = () => {
 
@@ -14,9 +15,9 @@ const Strengths = () => {
     return (
         <div className='strengths'>
             <section> 
-                THIS WILL BE HEADER COMPONENT IGNOREEE
+                <Header/>
             </section>
-            <div className='strengths__header-container'>
+            <div className='strengths__header-container n'>
                 <p className="step__text"> Step 2 </p>
                 <h1 className="strengths__title">Let's highlight your strengths & skills</h1>
             </div>
