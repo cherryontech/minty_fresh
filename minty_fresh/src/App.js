@@ -1,7 +1,7 @@
 // import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Strengths from './pages/Strengths/Strengths';
-import Homepage from './pages/HomePage';
+import Homepage from './pages/HomePage/HomePage';
 import './App.scss';
 
 
