@@ -8,6 +8,13 @@ import React, {useState} from "react";
 const FutureGoals = () => {
     const [selectedOption, setSelectedOption] = useState('');
 
+
+    //sets the selected option from the dropdowns
+    const handleSelectChange = (e) => {
+        
+        setSelectedOption(e.target.value);
+    };
+
     return (
         <div className="future-goals">
             <section>
@@ -32,10 +39,22 @@ const FutureGoals = () => {
                         name="why-this-role"
                         placeholder="Ex. This role would give me the oppotunity to reach many with my art and collaborate with other artists"/>
                     </label>
-                    <label htmlFor="dropdown" className="future-goals_question"> 
+                    <label className="future-goals_question"> 
                         <p>What are the top 3 industries you see yourself working in?</p>
-                        <select className="future-goals_dropdown" name="dropdown" value={selectedOption} onChange={""}>
+                        <select className="future-goals_dropdown" name="choice-1" value={selectedOption} onChange={handleSelectChange}>
                             <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                        <select className="future-goals_dropdown" name="choice-2" value={selectedOption} onChange={handleSelectChange}>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                        <select className="future-goals_dropdown" name="choice-3" value={selectedOption} onChange={handleSelectChange}>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
                         </select>
                     </label>
                 </div>
