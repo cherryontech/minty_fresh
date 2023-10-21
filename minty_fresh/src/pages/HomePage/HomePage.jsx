@@ -1,8 +1,12 @@
 //MF1-2
 import "./HomePage.scss"
+// import "../../../"
 
 
 const Homepage = () => {
+    const mobileLogo = "../../../Assets/Mobile/HomePage/1-LandingPage-illustration-main-Mobile.png"
+
+    // minty_fresh\src\Assets\HomePage\1-LandingPage-illustration-main-Mobile.png
 
     //TODO: finish button function
     const nextPageClick = () => {
@@ -13,7 +17,7 @@ const Homepage = () => {
     return (
         <div className="homepage">
             <div className="homepage_get-started-container">
-                {/* <img></img> */}
+                <img className = "mobile-logo" src={mobileLogo} alt = "Empower Logo. Person flexing."/>
                 <h1>Welcome to Empower</h1>
                 <p>A way to tame your imposter syndrome while job hunting</p>
                 <button className="get-started-btn" onClick={nextPageClick}>Get Started</button>
@@ -29,7 +33,7 @@ const Homepage = () => {
                 <p>We create personalized interview answers as you shape your profile and gremlin</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Homepage;
