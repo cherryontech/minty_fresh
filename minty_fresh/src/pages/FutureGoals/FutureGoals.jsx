@@ -59,6 +59,7 @@ const FutureGoals = () => {
                     </label>
                 </div>
             </form>
+            <button className="next-button">Next</button>
         </div>
     )
 }
