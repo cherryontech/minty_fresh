@@ -113,6 +113,14 @@
     border-radius: 20px;
 }
 
+@mixin checkbox {
+    background-color: #E5D5D1;
+    border-radius: 10px;
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem;
+}
+
 @mixin dropdown {
     border-radius: 10px;
     color: #515151;
