@@ -1,7 +1,4 @@
-//MF1-2
 import "./HomePage.scss"
-// import "../../../"
-
 
 const Homepage = () => {
     const mobileLogo = "../../../Assets/Mobile/HomePage/1-LandingPage-illustration-main-Mobile.png"
