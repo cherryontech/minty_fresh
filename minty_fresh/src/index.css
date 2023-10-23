@@ -16,3 +16,9 @@ body {
 textarea {
   resize: none;
 }
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
