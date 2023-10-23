@@ -1,52 +1,48 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif;
+textarea{
+    @include form-field;
+    margin-top: .5rem;
 }
 
 
-.strengths {
+.strengths{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem .5rem;
+
     &__title{
         @include headline_text;
-        width: 80%;
+        text-align: center;
+        width: 81%;
+        padding-bottom: .5rem;
+        letter-spacing: .07rem;
+        font-weight: normal;
     }
-    &__header-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+
     &__form{
-        padding: .5rem;
-        display: flex;
-        align-items: center;
-        flex-direction: column;    
-    }
-    &__question{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 1rem 0.5rem;
-        @include body_text;
-    
-        &-textbox{
-            @include form-field
+        padding: 0rem .5rem;
+        &-content{
+            @include title_text;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0.5rem 0rem;
+            margin: 0.5rem;
+            font-size: .9rem;
+            letter-spacing: 0.02rem;
         }
     }
 }
 
 .step__text{
-    @include label_text
+    @include label_text;
+    padding: 0.5rem 0rem;
 }
 
 .button__next{
-    @include button
+    @include button;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
