@@ -12,3 +12,7 @@ body {
         monospace;
 }
 
+
+textarea {
+  resize: none;
+}
