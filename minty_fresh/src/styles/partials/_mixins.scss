@@ -121,6 +121,18 @@
     margin: .5rem;
 }
 
+@mixin dropdown {
+    border-radius: 10px;
+    color: #515151;
+    padding: 1rem 1rem;
+    margin: .5rem;
+    border: none;
+    background-color: #E5D5D1;
+    width: 90%;
+    z-index: 1000;
+    @include body_text;
+}
+
 
 //////////// PADDING FOR PAGES ////////
 
