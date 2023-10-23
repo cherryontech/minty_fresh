@@ -1,7 +1,8 @@
 // import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Strengths from './pages/Strengths/Strengths';
-import Homepage from './pages/HomePage';
+import Homepage from './pages/HomePage/HomePage';
+import FutureGoals from './pages/FutureGoals/FutureGoals';
 import './App.scss';
 
 
@@ -17,7 +18,12 @@ function App() {
             path="/strengths"
             element={<Strengths/>}
           />
+        <Route
+            path="/futuregoals"
+            element={<FutureGoals/>}
+        />
       </Routes>
+
     </div>
   );
 }
