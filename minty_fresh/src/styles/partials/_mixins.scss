@@ -1,12 +1,12 @@
 // @use '../partials/typography' as *;
 @use '../partials/variables' as *;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif;
-}
+// *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     font-family: 'Titillium Web', sans-serif;
+// }
 
 
 //////////////////////////////////////////////////////// PAGE SIZE BREAKS ////////////////////////////////////////////////////////////////////////
@@ -97,8 +97,9 @@
     border-radius: 10px;
     color: #515151;
     padding: 1rem 1rem;
+    border: none;
     background-color: #E5D5D1;
-    width: 90%;
+    width: -webkit-fill-available;
     @include body_text;
 }
 
@@ -110,6 +111,26 @@
     width: 95%;
     border: none;
     border-radius: 20px;
+}
+
+@mixin checkbox {
+    background-color: #E5D5D1;
+    border-radius: 10px;
+    width: 100%;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+@mixin dropdown {
+    border-radius: 10px;
+    color: #515151;
+    padding: 1rem 1rem;
+    margin: .5rem;
+    border: none;
+    background-color: #E5D5D1;
+    width: 90%;
+    z-index: 1000;
+    @include body_text;
 }
 
 
