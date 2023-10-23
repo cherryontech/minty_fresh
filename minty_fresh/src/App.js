@@ -1,10 +1,12 @@
 // import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Strengths from './pages/Strengths/Strengths';
-import Homepage from './pages/HomePage';
+import Homepage from './pages/HomePage/HomePage';
+import FutureGoals from './pages/FutureGoals/FutureGoals';
 import './App.scss';
 import { useState } from 'react';
 import Results from './pages/Results/Results';
+import GrowthOpportunites from './pages/GrowthOpportunities/GrowthOpportunities';
 
 
 function App() {
@@ -40,7 +42,16 @@ function App() {
             />
           }
         /> 
+        <Route
+            path="/growth"
+            element={<GrowthOpportunites/>}
+          />
+        <Route
+            path="/futuregoals"
+            element={<FutureGoals/>}
+        />
       </Routes>
+
     </div>
   );
 }
