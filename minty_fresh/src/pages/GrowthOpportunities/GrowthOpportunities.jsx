@@ -3,18 +3,22 @@
 import "./GrowthOpportunities.scss"
 import Header from '../../components/Header/Header';
 import React, {useState} from "react";
-
+import { useNavigate } from 'react-router-dom';
 
 //TODO: finish the dropdown and add styling
 const GrowthOpportunites = () => {
-    const [selectedOption, setSelectedOption] = useState('');
+    const [isChecked, setIsChecked] = useState(false);
+
+    //array to work on checkbow functionality later
     const checkbox = ["Communication", "Self-perception", "Confidence", "Preparing for an interview", "Technical skills", "Other"];
+    const navigate = useNavigate();
 
     //sets the selected option from the dropdowns
-    const handleSelectChange = (e) => {
+    const handleCheckboxChange = () => {
         
-        setSelectedOption(e.target.value);
+        setIsChecked(!isChecked);
     };
+
 //TODO: fix checkboxes and do final styling
     return (
         <div className="growth">
@@ -31,6 +35,7 @@ const GrowthOpportunites = () => {
                     <label className="growth_question">
                         <p>What's your gremlin name?</p>
                         <textarea className="growth_question-text-area"
+                        required
                         name="gremlin-name"
                         placeholder="Ex. Debbie Downer"/>
                     </label>
@@ -44,8 +49,8 @@ const GrowthOpportunites = () => {
                                 id="communication"
                                 name="growth"
                                 value="communication"
-                                checked=""
-                                onChange={""}/>
+                                checked={isChecked}
+                                onChange={handleCheckboxChange}/>
                             </label>
                         
                             <label classname="growth_checkbox-label">Self-perception
@@ -54,8 +59,8 @@ const GrowthOpportunites = () => {
                                 id="self-perception"
                                 name="growth"
                                 value="self-perception"
-                                checked=""
-                                onChange={""}/>
+                                checked={isChecked}
+                                onChange={setIsChecked}/>
                             </label>
                             
                             <label classname="growth_checkbox-label">Confidence
@@ -64,8 +69,8 @@ const GrowthOpportunites = () => {
                                 id="confidence"
                                 name="growth"
                                 value="confidence"
-                                checked=""
-                                onChange={""}/>
+                                checked={isChecked}
+                                onChange={setIsChecked}/>
                             </label>
                             
                             <label classname="growth_checkbox-label">Preparing for an interview
@@ -74,8 +79,8 @@ const GrowthOpportunites = () => {
                                 id="interview-preparation"
                                 name="growth"
                                 value="interview-preparation"
-                                checked=""
-                                onChange={""}/>
+                                checked={isChecked}
+                                onChange={setIsChecked}/>
                             </label>
                             
                             <label classname="growth_checkbox-label">Technical Skills
@@ -84,8 +89,8 @@ const GrowthOpportunites = () => {
                                 id="technical-skills"
                                 name="growth"
                                 value="technical-skils"
-                                checked=""
-                                onChange={""}/>
+                                checked={isChecked}
+                                onChange={setIsChecked}/>
                             </label>
                             
                             <label classname="growth_checkbox-label">Other
@@ -94,21 +99,27 @@ const GrowthOpportunites = () => {
                                 id="other"
                                 name="growth"
                                 value="other"
-                                checked=""
-                                onChange={""}/>
+                                checked={isChecked}
+                                onChange={setIsChecked}/>
                             </label>
                         </div>
                     </label>
                     <label className="growth_question">
                         <p>How does your imposter syndrome show up for you?</p>
                         <textarea className="growth_question-text-area"
+                        required
                         name="why-this-role"
                         placeholder="Ex. It ususally shows up when others finish work tasks faster than I do because I end up questioning if I'm good enough to do the job."/>
                     </label>
 
                 </div>
             </form>
-            <button className="submit-button">Submit</button>
+            {/* set to persona page at the moment */}
+            <button className="submit-button"
+            onClick={(e) => {
+                e.preventDefault();
+                navigate('/persona');
+            }}>Submit</button>
         </div>
     )
 }
