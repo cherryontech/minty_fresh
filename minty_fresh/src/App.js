@@ -7,7 +7,11 @@ import './App.scss';
 import { useState } from 'react';
 import Results from './pages/Results/Results';
 import GrowthOpportunites from './pages/GrowthOpportunities/GrowthOpportunities';
-
+import PersonaName from './pages/PersonaName';
+import BtnPersonaName from './pages/BtnPersonaName';
+import BtnPastAcc from './pages/BtnPastAcc';
+import PastAcc from './pages/PastAcc';
+import AboutYourself from './pages/AboutYourself';
 
 function App() {
 
@@ -45,6 +49,30 @@ function App() {
         <Route
             path="/growth"
             element={<GrowthOpportunites/>}
+          />
+          <Route
+            path="/personaname"
+            element={<PersonaName/>}
+          />
+
+          <Route 
+          path="/btnpersonaname"
+          element={<BtnPersonaName/>}
+          />
+
+          <Route 
+          path="/btnpastacc"
+          element={<BtnPastAcc/>}
+          />
+
+          <Route 
+          path="/pastacc"
+          element={<PastAcc/>}
+          />
+
+          <Route 
+          path="/aboutyourself"
+          element={<AboutYourself/>}
           />
         <Route
             path="/futuregoals"
