@@ -1,14 +1,11 @@
 import "./HomePage.scss"
+import { useNavigate } from 'react-router-dom';
 
 const Homepage = () => {
-    const mobileLogo = "../../../Assets/Mobile/HomePage/1-LandingPage-illustration-main-Mobile.png"
+    const mobileLogo = "../../assets/images/1-LandingPage-illustration-main-Mobile.png"
 
-    // minty_fresh\src\Assets\HomePage\1-LandingPage-illustration-main-Mobile.png
+    const navigate = useNavigate();
 
-    //TODO: finish button function
-    const nextPageClick = () => {
-        //code to be able to go to next page when button clicked
-    };
 
     //TODO: clean up styling and add img
     return (
@@ -17,7 +14,11 @@ const Homepage = () => {
                 <img className = "mobile-logo" src={mobileLogo} alt = "Empower Logo. Person flexing."/>
                 <h1>Welcome to Empower</h1>
                 <p>A way to tame your imposter syndrome while job hunting</p>
-                <button className="get-started-btn" onClick={nextPageClick}>Get Started</button>
+                <button className="get-started-btn" 
+                onClick={(e) => {
+                    e.preventDefault();
+                    navigate('/personaname')
+                }}>Get Started</button>
             
             </div>
             <div className="homepage_onboarding-container">
