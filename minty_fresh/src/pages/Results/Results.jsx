@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Gremlin from "../Gremlin/Gremlin";
-import Persona from "../Persona/Persona";
+import Gremlin from "../../components/Gremlin/Gremlin";
+import Persona from "../../components/Persona/Persona";
 import './Results.scss';
 
 // import InterviewPrep from "../InterviewPrep/InterviewPrep";
