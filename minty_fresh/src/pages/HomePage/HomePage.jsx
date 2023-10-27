@@ -14,7 +14,6 @@ const Homepage = () => {
                 <img className = "mobile-logo" src={mobileLogo} alt = "Empower Logo. Person flexing."/>
                 <h1>Welcome to Empower</h1>
                 <p>A way to tame your imposter syndrome while job hunting</p>
-                <h1> HELLLOOOOOOOOO PLEASEEEEEEE </h1>
                 <button className="get-started-btn" 
                 onClick={(e) => {
                     e.preventDefault();
