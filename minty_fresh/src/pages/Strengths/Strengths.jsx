@@ -54,14 +54,16 @@ const Strengths = ({strengths, setStrengths}) => {
                             onChange={handleChange}
                         />
                     </label>
-                <button 
-                    className="button__next" 
-                    onClick={(e) => {
-                        e.preventDefault();
-                        navigate('/results');
-                    }}
-                    > Next
-                </button>
+                    <footer>
+                        <button 
+                            className="button__next" 
+                            onClick={(e) => {
+                                e.preventDefault();
+                                navigate('/results');
+                            }}
+                            > Next
+                        </button>
+                    </footer>
             </form>
         </div>
     )
