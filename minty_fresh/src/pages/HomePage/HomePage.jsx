@@ -1,8 +1,9 @@
 import "./HomePage.scss"
 import { useNavigate } from 'react-router-dom';
+import mobileLogo from '../../assets/images/1-LandingPage-illustration-main-Mobile.png'
 
 const Homepage = () => {
-    const mobileLogo = "../../assets/images/1-LandingPage-illustration-main-Mobile.png"
+
 
     const navigate = useNavigate();
 
