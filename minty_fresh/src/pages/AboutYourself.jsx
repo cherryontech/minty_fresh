@@ -8,7 +8,7 @@ const AboutYourself = () => {
 
             <p>Based on your responses, here's a personalized answer to the question "Tell me about yourself."</p>
 
-            <p>Big block of text with answers goes here.</p>
+            <input type='text'>Big block of text with answers goes here.</input>
             
             <button type='button'>View your profile</button>
 

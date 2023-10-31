@@ -1,7 +1,7 @@
 const PersonaName = () => {
 
     return (
-        <div>
+        <div className='persona-container'>
             <h1>Let's start with a name</h1>
 
             <p>What's your name?</p>
