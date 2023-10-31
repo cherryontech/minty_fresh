@@ -32,9 +32,9 @@
     &_question {
         display: flex;
         flex-direction: column;
-        align-items: center;
         padding: 1rem;
         width: 100%;
+        justify-content: space-between;
     
         // @include body_text
     }
@@ -42,15 +42,8 @@
         margin: .5rem;
         @include form-field;
     }
-    &_checkbox-group {
-        display: flex;
-        flex-direction: column;
-        @include checkbox;
-    }
-    &_checkbox {
+    &_checkbox-label {
         justify-content: space-between;
-        align-items: center;
-
     }
     
     .submit-button {

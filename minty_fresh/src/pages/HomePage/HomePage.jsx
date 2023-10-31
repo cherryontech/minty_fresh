@@ -8,7 +8,7 @@ const Homepage = () => {
     const navigate = useNavigate();
 
 
-    //TODO: clean up styling and add img
+    //TODO: add img to the lower section
     return (
         <div className="homepage">
             <div className="homepage_get-started-container">

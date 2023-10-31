@@ -41,7 +41,6 @@ const GrowthOpportunites = () => {
                     </label>
                     <label className="growth_question">
                     What are some things you're working to improve on?<br/>
-                        <div className="growth_checkbox-group">
 
                             <label classname="growth_checkbox-label">Communication
                                 <input type="checkbox" 
@@ -64,7 +63,7 @@ const GrowthOpportunites = () => {
                             </label>
                             
                             <label classname="growth_checkbox-label">Confidence
-                            <input type="checkbox" 
+                                <input type="checkbox" 
                                 className="growth_checkbox"
                                 id="confidence"
                                 name="growth"
@@ -102,7 +101,7 @@ const GrowthOpportunites = () => {
                                 checked={isChecked}
                                 onChange={setIsChecked}/>
                             </label>
-                        </div>
+
                     </label>
                     <label className="growth_question">
                         <p>How does your imposter syndrome show up for you?</p>
@@ -113,6 +112,7 @@ const GrowthOpportunites = () => {
                     </label>
 
                 </div>
+            
             </form>
             {/* set to persona page at the moment */}
             <button className="submit-button"
