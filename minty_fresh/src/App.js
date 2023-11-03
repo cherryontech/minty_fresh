@@ -7,11 +7,13 @@ import './App.scss';
 import { useState } from 'react';
 import Results from './pages/Results/Results';
 import GrowthOpportunites from './pages/GrowthOpportunities/GrowthOpportunities';
-import PersonaName from './pages/PersonaName';
+import PersonaName from './pages/PersonaName/PersonaName';
 import BtnPersonaName from './pages/BtnPersonaName';
 import BtnPastAcc from './pages/BtnPastAcc';
 import PastAcc from './pages/PastAcc';
 import AboutYourself from './pages/AboutYourself';
+import LetsGetStarted from './pages/LetsGetStarted/LetsGetStarted';
+import InsertNamePage from './pages/InsertNamePage/InsertNamePage';
 
 function App() {
 
@@ -78,7 +80,16 @@ function App() {
             path="/futuregoals"
             element={<FutureGoals/>}
         />
+        <Route
+          path="/letsgetstarted"
+          element={<LetsGetStarted/>}
+          />
+        <Route
+        path="/insertnamepage"
+        element={<InsertNamePage/>}
+        />
       </Routes>
+
 
     </div>
   );
