@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 const GrowthOpportunites = () => {
     const [isChecked, setIsChecked] = useState(false);
 
-    //array to work on checkbow functionality later
+    //array to work on checkbox functionality later
     // const checkbox = ["Communication", "Self-perception", "Confidence", "Preparing for an interview", "Technical skills", "Other"];
     const navigate = useNavigate();
 
