@@ -1,0 +1,28 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    margin: 25px;
+    text-align: center;
+}
+
+.write-name {
+    border-radius: 10px;
+    margin: 25px;
+    background: #FFF1ED;
+}
+
+.btn {
+    margin: 50px;
+    background: #F5AB4B;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+

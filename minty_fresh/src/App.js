@@ -11,7 +11,9 @@ import PersonaName from './pages/PersonaName';
 import BtnPersonaName from './pages/BtnPersonaName';
 import BtnPastAcc from './pages/BtnPastAcc';
 import PastAcc from './pages/PastAcc';
-import AboutYourself from './pages/AboutYourself';
+import AboutYourself from './pages/AboutYourself/AboutYourself';
+import InsertNameDesktop from './pages/InsertNameDesktop/InsertNameDesktop';
+import LetsGetStartedDesktop from './pages/LetsGetStartedDesktop/LetsGetStartedDesktop';
 
 function App() {
 
@@ -77,6 +79,16 @@ function App() {
         <Route
             path="/futuregoals"
             element={<FutureGoals/>}
+        />
+        
+        <Route
+          path="/insertnamedesktop"
+          element={<InsertNameDesktop/>}
+          />
+        
+        <Route
+        path="/letsgetstarteddesktop"
+        element={<LetsGetStartedDesktop/>}
         />
       </Routes>
 
